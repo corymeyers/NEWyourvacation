@@ -1,17 +1,19 @@
 $(document).ready(function(){
 
   $('form').submit(function(event) {
-    var personal1Input = $("input#personal1").val();
-    var q1Input = $("input#question1").val();
-    var q2Input = $("input#question2").val();
-    var q3Input = $("input#question3").val();
-    var q4Input = $("input#question4").val();
-    var q5Input = $("input#question5").val();
+    var fieldInputs = ["question1", "question2", "question3", "question4", "question5"]
+    // var q1Input = $("input#question1").val();
+    // var q2Input = $("input#question2").val();
+    // var q3Input = $("input#question3").val();
+    // var q4Input = $("input#question4").val();
+    // var q5Input = $("input#question5").val();
+    fieldInputs.forEach(function(field){
+      score = $
+    })
     function getScore(q1Input, q1Input, q2Input, q3Input, q4Input, q5Input) {"q1Input"+"q1Input"+"q2Input"+"q3Input"+"q4Input"+"q5Input"}
     var score = getScore
 
 
-    $('.personal1').text(personal1Input);
 
     if(score = 1a2a3a4a5a) {
       $('#vacation1show').show();
