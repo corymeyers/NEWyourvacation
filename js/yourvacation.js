@@ -14,7 +14,7 @@ $("form#vacationQuestions").submit(function(event) {
   } else if (q1 === "Cold" && q2 === "Beaches" && q3 === "Money" && q4 === "Short" && q5 === "No") {
       $('#vacation3show').show();
   } else {
-      $('#vacation4show').show();
+      $('#deadlink').show();
   }
 
     event.preventDefault();
