@@ -16,22 +16,21 @@ $("form#vacationQuestions").submit(function(event) {
   } else {
       $('#deadlink').show();
   }
-
     event.preventDefault();
-})
+  })
 
-$(".clickable1").click(function() {
-    $("#vacation1show").toggle();
-    $("#vacation1hide").toggle();
-  });
+  $(".clickable1").click(function() {
+      $("#vacation1show").toggle();
+      $("#vacation1hide").toggle();
+    });
 
-$(".clickable2").click(function() {
-    $("#vacation2show").toggle();
-    $("#vacation2hide").toggle();
-  });
+  $(".clickable2").click(function() {
+      $("#vacation2show").toggle();
+      $("#vacation2hide").toggle();
+    });
 
-$(".clickable3").click(function() {
-    $("#vacation3show").toggle();
-    $("#vacation3hide").toggle();
-  });
+  $(".clickable3").click(function() {
+      $("#vacation3show").toggle();
+      $("#vacation3hide").toggle();
+    });
 });
