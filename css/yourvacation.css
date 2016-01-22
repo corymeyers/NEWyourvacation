@@ -1,0 +1,8 @@
+#vacation1show, #vacation1hide, #vacation2show, #vacation2hide,  #vacation3show, #vacation3hide, #vacation4show {
+  display: none;
+}
+
+.clickable1, .clickable2, .clickable3 {
+  cursor: pointer;
+  color: #0088cc;
+}
