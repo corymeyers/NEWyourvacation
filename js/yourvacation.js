@@ -1,47 +1,37 @@
 $(document).ready(function(){
 
-  $('form').submit(function(event) {
-    var fieldInputs = ["question1", "question2", "question3", "question4", "question5"]
-    // var q1Input = $("input#question1").val();
-    // var q2Input = $("input#question2").val();
-    // var q3Input = $("input#question3").val();
-    // var q4Input = $("input#question4").val();
-    // var q5Input = $("input#question5").val();
-    fieldInputs.forEach(function(field){
-      score = $
-    })
-    function getScore(q1Input, q1Input, q2Input, q3Input, q4Input, q5Input) {"q1Input"+"q1Input"+"q2Input"+"q3Input"+"q4Input"+"q5Input"}
-    var score = getScore
+$("form#vacationQuestions").submit(function(event) {
+  var q1 = $("select#q1").val();
+  var q2 = $("select#q2").val();
+  var q3 = $("select#q3").val();
+  var q4 = $("select#q4").val();
+  var q5 = $("select#q5").val();
 
+  if(q1 === "Cold" && q2 === "Beaches" && q3 === "Money" && q4 === "Short" && q5 === "Yes") {
+    $('#vacation1show').show();
+  } else if (q1 === "Warm" && q2 === "Beaches" && q3 === "Money" && q4 === "Short" && q5 === "Yes") {
+      $('#vacation2show').show();
+  } else if (q1 === "Cold" && q2 === "Beaches" && q3 === "Money" && q4 === "Short" && q5 === "No") {
+      $('#vacation3show').show();
+  } else {
+      $('#vacation4show').show();
+  }
 
+    event.preventDefault();
+})
 
-    if(score = 1a2a3a4a5a) {
-      $('#vacation1show').show();
-    } else if (score = 1b2a3a4a5a) {
-        $('#vacation2show').show();
-    } else if (score = 1a2b3a4a5a) {
-        $('#vacation3show').show();
-    } else {
-    $('#vacation4show').show();
-    }
+$(".clickable1").click(function() {
+    $("#vacation1show").toggle();
+    $("#vacation1hide").toggle();
+  });
 
-      event.preventDefault();
-    });
+$(".clickable2").click(function() {
+    $("#vacation2show").toggle();
+    $("#vacation2hide").toggle();
+  });
 
-  $(".clickable1").click(function() {
-      $("#vacation1show").toggle();
-      $("#vacation1hide").toggle();
-    });
-
-  $(".clickable2").click(function() {
-      $("#vacation2show").toggle();
-      $("#vacation2hide").toggle();
-    });
-
-  $(".clickable3").click(function() {
-      $("#vacation3show").toggle();
-      $("#vacation3hide").toggle();
-    });
-
-
+$(".clickable3").click(function() {
+    $("#vacation3show").toggle();
+    $("#vacation3hide").toggle();
+  });
 });
